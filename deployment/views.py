@@ -15,4 +15,4 @@ def result(request):
     listdata.append(intInput)
     # print(listdata)
     predictionAns = cls.predict([listdata])
-    return render(request, 'result.html', {'predictedValue' : round(predictionAns[0], 3), 'userInput': listdata[0]})
+    return render(request, 'result.html', {'predictedValue' : round(predictionAns[0], 3), 'userInput': listdata[0], 'predictedValueMinutes': round((predictionAns[0]/60), 2)})

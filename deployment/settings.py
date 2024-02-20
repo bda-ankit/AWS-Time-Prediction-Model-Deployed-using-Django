@@ -71,6 +71,9 @@ WSGI_APPLICATION = 'vercel_app.wsgi.app'
 # WSGI_APPLICATION = 'deployment.wsgi.application'
 
 
+# The line `WSGI_APPLICATION = 'vercel_app.wsgi.app'` in the Django settings file specifies the entry
+# point for the WSGI application. WSGI (Web Server Gateway Interface) is a standard interface between
+# web servers and Python web applications or frameworks.
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
