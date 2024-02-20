@@ -3,7 +3,7 @@ from django.shortcuts import render
 import joblib
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'index.html')
 
 def result(request):
     cls = joblib.load('linear_regression_model.joblib')
