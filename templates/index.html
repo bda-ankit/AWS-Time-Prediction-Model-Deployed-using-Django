@@ -36,24 +36,28 @@
             justify-content: center;
             color: white;
             padding: 1rem;
-            flex-direction: column;
+            flex-direction: row; /* Updated flex-direction to row */
             text-align: center;
         }
 
         .Input-text {
             padding: 0.8rem 1.2rem;
-            margin-bottom: 1rem;
+            margin-right: 1rem; /* Added margin-right for spacing between input fields */
             color: #fff;
             background-color: #111;
             border: none;
             border-radius: 0.8rem;
             font-size: 1rem;
             transition: box-shadow 0.3s ease;
-            width: 100%;
+            width: 33%;
             max-width: 300px;
-            text-align: center; /* Center the text */
+            text-align: center;
         }
 
+        .Input-text::placeholder {
+            color: #22642d; /* Placeholder text color */
+            font-size: 0.7rem; /* Placeholder text font size */
+        }
 
         .Predict-button {
             padding: 0.6rem 2rem;
@@ -61,10 +65,9 @@
             background-color: #2d4db8;
             border: none;
             border-radius: 0.8rem;
-            font-size: 1rem;
+            font-size: 0.88rem;
             cursor: pointer;
             transition: background-color 0.5s ease;
-            width: 100%;
             max-width: 120px;
         }
 
@@ -81,13 +84,15 @@
 </head>
 <body>
     <div class="Wrapper">
-        <h1 class="Title">AWS Document uploading prediction model deployment</h1>
+        <h1 class="Title">AWS Document Uploading Time Prediction Model</h1>
         <div class="Input">
             <form action="{% url 'result' %}" method="post">
             {% csrf_token %}
-                <label for="input">Enter Total Document Count below &nbsp;👇</label>
+                <label for="input">Enter Accurate Details Below &nbsp;👇</label>
                 <br><br>
-                <input type="text" id="input" class="Input-text" required name="predictValue">
+                <input type="text" id="input" class="Input-text" required name="fileCount" placeholder="Enter Total File Count">
+                <input type="text" id="input" class="Input-text" required name="allFileSize" placeholder="Enter Total Size (GB)">
+                <br><br>
                 <input type="submit" required value="Predict" class="Predict-button">
             </form>
         </div>

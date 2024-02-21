@@ -67,8 +67,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'vercel_app.wsgi.app'
-# WSGI_APPLICATION = 'deployment.wsgi.application'
+# WSGI_APPLICATION = 'vercel_app.wsgi.app'
+WSGI_APPLICATION = 'deployment.wsgi.application'
 
 
 # The line `WSGI_APPLICATION = 'vercel_app.wsgi.app'` in the Django settings file specifies the entry
