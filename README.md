@@ -30,7 +30,7 @@ Use the loaded model to predict document uploading time based on the input featu
 I have used html page to take responses and as per response model predict total time taken to upload all documents.
 ## Deployment
 
-I have deployed our Django app to Vercel. Vercel is free hosting site to deploy our Django app at free of cost.
+I have deployed Django app to Vercel. Vercel is free hosting site to deploy our Django app at free of cost.
 
 ## Demo
 
