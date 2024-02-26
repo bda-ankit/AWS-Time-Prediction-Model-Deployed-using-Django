@@ -3,3 +3,5 @@
 __pycache__
 *.pyc
 linear_regression_model.joblib
+README.md
+db.sqlite3
