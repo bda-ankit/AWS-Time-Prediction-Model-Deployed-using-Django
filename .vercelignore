@@ -1,0 +1,4 @@
+# .vercelignore
+.git
+__pycache__
+*.pyc
